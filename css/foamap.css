@@ -1,20 +1,9 @@
 
 #map {
-    position: absolute;
     top: 0;
     bottom: 0;
     width: 979px;
     height: 590px;
-}
-
-#map-overlay-hawaii {
-    position: absolute;
-    left: 10px;
-    bottom: 35px;
-    width: 200px;
-    height: 150px;
-    border: 1px solid #fff;
-    display: none;
 }
 
 .leaflet-control-jump-style-zoom:before {
@@ -66,10 +55,6 @@
     color: black;
 }
 
-.map_pretext, .map_pretext1 {
-    color: #666666;
-}
-
 .panel-body {
     font-size: 12px;
 }
@@ -111,6 +96,10 @@
 .map_pretext1 {
     width: 93%;
     margin-left: 16px !important;
+}
+
+.col-sm-12 {
+	margin-left: 20px !important;
 }
 
 .search-ui {
