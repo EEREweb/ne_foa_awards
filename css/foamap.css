@@ -100,6 +100,8 @@
 
 .col-sm-12 {
 	margin-left: 20px !important;
+	padding-left: 0 !important;
+    padding-right: 0 !important;
 }
 
 .search-ui {
