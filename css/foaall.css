@@ -111,7 +111,6 @@ table.dataTable th:nth-child(2), table.dataTable td:nth-child(2) {
     margin-left: 16px !important;
 }
 
-@media (min-width: 768px)
 .col-sm-8 {
     padding-left: 0 !important;
 }
