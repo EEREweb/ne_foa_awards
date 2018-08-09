@@ -41,7 +41,6 @@
 	// script, they'll still work due to JavaScript's function hoisting feature.
 	function csvLoaded(data) {
 
-
 		var dataSet = csv2geojson.csv2geojson(data);
 		var readyLayer = featureLayer.setGeoJSON(dataSet);
 
@@ -71,9 +70,9 @@
 			var content = '<div><img width="270px" src=\"nelogos/' + layer.feature.properties.logo_filename + '" alt=\"' + layer.feature.properties.logo_filename + '" \/> <\/div>' + 
 					'<div class="project_title">' + layer.feature.properties.awardee_name + '<\/div>' +
 					'<div class="partner_location">' + layer.feature.properties.location + '<\/div><hr\/>' +
+					'<div class="callout_label">Award Title: <\/div>' + layer.feature.properties.award_title + '<br\/>' +
 					'<div class="callout_label">' + layer.feature.properties.award_type.split(': ')[0] + ': <\/div>' + layer.feature.properties.award_type.split(': ')[1] + '<br\/>' +
-					//'<div class="callout_label">Title: <\/div>' + layer.feature.properties.award_title + '<br\/>' +
-					'<span class="callout_label">DOE Funding: <\/span>' + layer.feature.properties.doe_funding + '<br\/>';
+					'<span class="callout_label">DOE Funding: <\/span>' + layer.feature.properties.doe_funding + ' (estimated)<br\/>';
 ;
 
 			layer.bindPopup(content);
