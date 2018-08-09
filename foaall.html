@@ -147,11 +147,10 @@
 
 				{ "data": "location" },
 				{ "data": "award_type" },
+				{ "data": "doe_funding" },
 				{ "data": "round_awarded" },
 				{ "data": "status" },
-				{ "data": "doe_funding" },
 				{ "data": "total_value" },
-				{ "data": "round_awarded" },
 				{ "data": "logo_filename" },
 			],
 			"columnDefs": [
@@ -174,21 +173,21 @@
 				},
 				{
 					"targets": [4],
-					"title": "Award Type",
+					"title": "DOE Funding",
 				},
 				{
 					"targets": [5],
+					"title": "Award Type",
+					"className": 'dt-head-nowrap',
+				},
+				{
+					"targets": [6],
 					"title": "Year Awarded",
 					"className": 'dt-body-nowrap dt-head-nowrap',
 				},
 				{
-					"targets": [6],
-					"title": "Status"
-				},
-				{
 					"targets": [7],
-					"title": "DOE Funding",
-					"visible": false,
+					"title": "Status"
 				},
 				{
 					"targets": [8],
@@ -197,11 +196,6 @@
 				},
 				{
 					"targets": [9],
-					"title": "Rounded Award",
-					"visible": false,
-				},
-				{
-					"targets": [10],
 					"title": "Logo Filename",
 					"visible": false,
 				},
@@ -376,7 +370,7 @@
 					'<div class="partner_location">' + layer.feature.properties.location + '<\/div><hr\/>' +
 					'<div class="callout_label">' + layer.feature.properties.award_type.split(': ')[0] + ': <\/div>' + layer.feature.properties.award_type.split(': ')[1] + '<\/div>' +
 					'<div class="callout_label">Title: <\/div><a href="' + layer.feature.properties.abstract_filename + '\">' + layer.feature.properties.award_title + '<\/a><br\/>' +
-					'<span class="callout_label">DOE Funding: <\/span>' + layer.feature.properties.doe_funding + '<br\/>' +
+					'<span class="callout_label">DOE Funding: <\/span>' + layer.feature.properties.doe_funding + ' <em>(estimated)<\/em><br\/>' +
 					'<span class="callout_label">Non-DOE Cost Share: <\/span>' + layer.feature.properties.nondoe_costshare + '<br\/>' +
 					'<span class="callout_label">Total Award: <\/span>' + layer.feature.properties.total_value + '<br\/>' +
 					'<span class="callout_label">Year Awarded: <\/span> ' + layer.feature.properties.round_awarded + '<br\/>' +
