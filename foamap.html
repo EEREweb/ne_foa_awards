@@ -98,7 +98,7 @@
 	var map = L.mapbox.map('map', 'energy.nda103il',
 	{
 		maxZoom: 9, minZoom: 2, attributionControl: false, legendControl: { position: 'bottomright' }
-	}).setView([40, -90], 3);
+	})
 
 	var featureLayer = L.mapbox.featureLayer();
 
@@ -111,8 +111,9 @@
 	});
 
 	var resetMap = function () {
-		map.setView([40, -90], 3);
+		map.setView([40, -82], 3);
 	};
+	resetMap();
 
     function search_dt_column(dtable, col, cntrl) {
         var term = '';
