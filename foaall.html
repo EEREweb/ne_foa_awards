@@ -84,6 +84,8 @@
 							<option value="Selected for Award">Selected for Award</option>
                             <option value="Active">Active</option>
                             <option value="Inactive">Inactive</option>
+                            <option value="Negotiating Award Terms">Negotiating Award Terms</option>
+                            <option value="Cancelled">Cancelled</option>
                         </select>
                     </div>
                 </div>
@@ -109,7 +111,7 @@
 
 <script>
 
-	var csvDataFile = 'data/20191227_industry_foa_awardees.csv';
+	var csvDataFile = 'data/20200511_industry_foa_awardees.csv';
 	$.when($.ajax({
 		type: "GET",
 		url: csvDataFile,
